@@ -51,9 +51,6 @@ public class ListaClientesSimple {
                 // 5. Concatenar ambas cadenas (agregando los dos puntos en el medio)
                 String horaCompleta = horaSeleccionada + ":" + minutoSeleccionado;
 
-                // Asignar al nodo (asumiendo que tu objeto 'c' tiene un setHora)
-                // c.setHora(horaCompleta);
-                // Mensaje de prueba para verificar
                 c.setHoraIngreso(horaCompleta);
                 JOptionPane.showMessageDialog(null, "Reserva registrada para las: " + horaCompleta);
                 System.out.println(c.getHoraIngreso());
