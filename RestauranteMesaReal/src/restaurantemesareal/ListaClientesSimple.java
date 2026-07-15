@@ -9,5 +9,5 @@ package restaurantemesareal;
  * @author alanizan
  */
 public class ListaClientesSimple {
-    
+
 }

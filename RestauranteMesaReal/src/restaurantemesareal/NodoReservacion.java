@@ -1,7 +1,5 @@
 package restaurantemesareal;
 
-import restaurantemesareal.Reservacion;
-
 public class NodoReservacion {
 
     private Reservacion reservacion;

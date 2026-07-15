@@ -1,13 +1,9 @@
-
 package restaurantemesareal;
-
-import restaurantemesareal.Cliente;
-
 
 public class NodoCliente {
 
-private Cliente cliente;
-private NodoCliente siguiente;
+    private Cliente cliente;
+    private NodoCliente siguiente;
 
     public NodoCliente(Cliente cliente) {
         this.cliente = cliente;
@@ -30,6 +26,4 @@ private NodoCliente siguiente;
         this.siguiente = siguiente;
     }
 
-
-    
 }

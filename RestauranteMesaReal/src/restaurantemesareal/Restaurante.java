@@ -68,7 +68,6 @@ public class Restaurante {
                     break;
                 case "Salir":
                     System.exit(0);
-                    break;
             }
         } while (continuar);
     }
