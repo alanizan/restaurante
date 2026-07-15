@@ -7,9 +7,14 @@ package restaurantemesareal;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author alanizan
+/*
+
+    private String nombre;
+    private int CantidadPersonas;
+    private Mesa MesaAsignada;
+    private String estado;
+    private String horaIngreso;
+ 
  */
 public class ListaClientesSimple {
 
@@ -23,6 +28,7 @@ public class ListaClientesSimple {
         // Se definen las opciones de hora y minutos
         String[] horas = {"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"};
         String[] minutos = {"00", "30"};
+        String[] estado = {"Esperando", "Atendido", "Pagado"};
 
         // joption pane para el cuadro de dialogo de hora
         String horaSeleccionada = (String) JOptionPane.showInputDialog(null,
@@ -48,10 +54,19 @@ public class ListaClientesSimple {
             // validar nuevamente que no haya cancelado
             if (minutoSeleccionado != null) {
 
-                // 5. Concatenar ambas cadenas (agregando los dos puntos en el medio)
+                //concatenar ambas cadenas (agregando los dos puntos en el medio)
                 String horaCompleta = horaSeleccionada + ":" + minutoSeleccionado;
 
                 c.setHoraIngreso(horaCompleta);
+
+                int CantidadPersonas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de personas "));
+
+                if (CantidadPersonas == 0) {
+                    JOptionPane.showMessageDialog(null, "La mesa no puede quedar vacia", "Error", JOptionPane.ERROR_MESSAGE);
+
+                }
+                c.setCantidadPersonas(CantidadPersonas);
+
                 JOptionPane.showMessageDialog(null, "Reserva registrada para las: " + horaCompleta);
                 System.out.println(c.getHoraIngreso());
             }
