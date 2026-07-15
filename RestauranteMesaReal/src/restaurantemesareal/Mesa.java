@@ -1,6 +1,5 @@
 package restaurantemesareal;
 
-import restaurantemesareal.ColaPedidos;
 
 public class Mesa {
 
