@@ -5,8 +5,7 @@ public class NodoCliente {
     private Cliente cliente;
     private NodoCliente siguiente;
 
-    public NodoCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public NodoCliente() {
         this.siguiente = null;
     }
 
