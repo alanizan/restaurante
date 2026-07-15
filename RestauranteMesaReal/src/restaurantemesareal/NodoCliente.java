@@ -1,6 +1,8 @@
 
 package restaurantemesareal;
 
+import restaurantemesareal.Cliente;
+
 
 public class NodoCliente {
 

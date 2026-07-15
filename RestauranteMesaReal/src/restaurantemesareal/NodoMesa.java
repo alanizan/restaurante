@@ -1,5 +1,7 @@
 package restaurantemesareal;
 
+import restaurantemesareal.Mesa;
+
 public class NodoMesa {
 
 private Mesa mesa;

@@ -8,6 +8,6 @@ package restaurantemesareal;
  *
  * @author alanizan
  */
-public class ListaClientes {
+public class ListaClientesSimple {
     
 }

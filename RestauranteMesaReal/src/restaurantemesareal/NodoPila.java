@@ -1,5 +1,7 @@
 package restaurantemesareal;
 
+import restaurantemesareal.PlatoCancelado;
+
 public class NodoPila {
 
     private PlatoCancelado plato;

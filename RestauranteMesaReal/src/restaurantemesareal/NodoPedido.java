@@ -1,5 +1,7 @@
 package restaurantemesareal;
 
+import restaurantemesareal.Pedido;
+
 public class NodoPedido {
 
     private Pedido pedido;

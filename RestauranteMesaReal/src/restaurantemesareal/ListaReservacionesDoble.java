@@ -2,6 +2,6 @@
 package restaurantemesareal;
 
 
-public class ListaReservaciones {
+public class ListaReservacionesDoble {
     
 }
