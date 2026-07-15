@@ -38,6 +38,8 @@ public class Restaurante {
                     break;
                 case "Registrar Cliente":
                     // Lógica para registrar cliente
+                    ListaClientesSimple.insertar();
+                    
                     break;
                 case "Asignar mesa":
                     // Lógica para asignar mesa

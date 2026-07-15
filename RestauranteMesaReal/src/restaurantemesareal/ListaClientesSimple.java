@@ -4,10 +4,61 @@
  */
 package restaurantemesareal;
 
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author alanizan
  */
 public class ListaClientesSimple {
+
+    public static void insertar() {
+
+        Cliente c = new Cliente();
+
+        // 1. Solicitar el nombre del cliente
+        c.setNombre(JOptionPane.showInputDialog("Ingrese nombre del cliente a registrar"));
+
+        // Se definen las opciones de hora y minutos
+        String[] horas = {"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"};
+        String[] minutos = {"00", "30"};
+
+        // joption pane para el cuadro de dialogo de hora
+        String horaSeleccionada = (String) JOptionPane.showInputDialog(null,
+                "Seleccione la hora deseada:",
+                "Selección de Hora",
+                JOptionPane.PLAIN_MESSAGE,
+                new ImageIcon("src/restaurantemesareal/Imagenes/resize.png"),
+                horas,
+                horas[0]);
+
+        // valida que el usuario no haya presionado "Cancelar" o cerrado la ventana
+        if (horaSeleccionada != null) {
+
+            // 4. Mostrar diálogo para seleccionar los MINUTOS
+            String minutoSeleccionado = (String) JOptionPane.showInputDialog(null,
+                    "Seleccione los minutos:",
+                    "Selección de Minutos",
+                    JOptionPane.PLAIN_MESSAGE,
+                    new ImageIcon("src/restaurantemesareal/Imagenes/resize.png"),
+                    minutos,
+                    minutos[0]);
+
+            // validar nuevamente que no haya cancelado
+            if (minutoSeleccionado != null) {
+
+                // 5. Concatenar ambas cadenas (agregando los dos puntos en el medio)
+                String horaCompleta = horaSeleccionada + ":" + minutoSeleccionado;
+
+                // Asignar al nodo (asumiendo que tu objeto 'c' tiene un setHora)
+                // c.setHora(horaCompleta);
+                // Mensaje de prueba para verificar
+                c.setHoraIngreso(horaCompleta);
+                JOptionPane.showMessageDialog(null, "Reserva registrada para las: " + horaCompleta);
+                System.out.println(c.getHoraIngreso());
+            }
+        }
+    }
 
 }
