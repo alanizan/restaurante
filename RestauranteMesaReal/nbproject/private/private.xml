@@ -7,6 +7,19 @@
             <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Cliente.java</file>
             <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/NodoCliente.java</file>
             <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Restaurante.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Reservacion.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Principal.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/PlatoCancelado.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/PilaCancelados.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Pedido.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/NodoReservacion.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/NodoPila.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/NodoPedido.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/NodoMesa.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/Mesa.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/ListaReservacionesDoble.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/ColaPedidos.java</file>
+            <file>file:/Users/alanizan/netbeans/restaurante/restaurante/RestauranteMesaReal/src/restaurantemesareal/ArbolMesas.java</file>
         </group>
     </open-files>
 </project-private>

@@ -33,7 +33,7 @@ public class ListaClientesSimple {
 
         Cliente c = new Cliente();
 
-        // 1. Solicitar el nombre del cliente
+        // solicitar el nombre del cliente
         c.setNombre(JOptionPane.showInputDialog("Ingrese nombre del cliente a registrar"));
 
         // Se definen las opciones de hora y minutos
