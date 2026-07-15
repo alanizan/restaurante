@@ -67,7 +67,6 @@ public class Restaurante {
                     // Lógica para ver historial de clientes
                     break;
                 case "Salir":
-                    JOptionPane.showMessageDialog(null, "Saliendo del sistema");
                     System.exit(0);
                     break;
             }
