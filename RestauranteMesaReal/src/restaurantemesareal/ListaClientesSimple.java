@@ -36,7 +36,7 @@ public class ListaClientesSimple {
         // valida que el usuario no haya presionado "Cancelar" o cerrado la ventana
         if (horaSeleccionada != null) {
 
-            // 4. Mostrar diálogo para seleccionar los MINUTOS
+            // joption pane para el cuadro de dialogo de minutos
             String minutoSeleccionado = (String) JOptionPane.showInputDialog(null,
                     "Seleccione los minutos:",
                     "Selección de Minutos",
