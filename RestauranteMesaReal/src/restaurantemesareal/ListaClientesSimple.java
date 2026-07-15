@@ -17,6 +17,17 @@ import javax.swing.JOptionPane;
  
  */
 public class ListaClientesSimple {
+    
+    private NodoCliente inicio;
+
+    public ListaClientesSimple() {
+        this.inicio = null;
+    }
+    
+        public boolean vacia() {
+        return inicio == null;
+    }
+    
 
     public static void insertar() {
 
