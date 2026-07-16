@@ -17,19 +17,31 @@ import javax.swing.JOptionPane;
  
  */
 public class ListaClientesSimple {
-    
+
     private NodoCliente inicio;
 
     public ListaClientesSimple() {
         this.inicio = null;
     }
-    
-        public boolean vacia() {
+
+    public boolean vacia() {
         return inicio == null;
     }
-    
 
-    public static void insertar() {
+    private int obtenerPrioridad(String estado) {
+        switch (estado) {
+            case "Esperando":
+                return 1;
+            case "Atendido":
+                return 2;
+            case "Pagado":
+                return 3;
+            default:
+                return 4;
+        }
+    }
+
+    public  void insertar() {
 
         Cliente c = new Cliente();
 
@@ -78,9 +90,43 @@ public class ListaClientesSimple {
                 }
                 c.setCantidadPersonas(CantidadPersonas);
 
+                String estadoCliente = (String) JOptionPane.showInputDialog(null,
+                        "Seleccione el estado del cleinte:",
+                        "Selección de Estado",
+                        JOptionPane.PLAIN_MESSAGE,
+                        new ImageIcon("src/restaurantemesareal/Imagenes/resize.png"),
+                        estado,
+                        estado[0]);
+
+                if (estadoCliente != null) {
+
+                    c.setEstado(estadoCliente);
+
+                }
+
+                NodoCliente nuevo = new NodoCliente();
+
+                nuevo.setCliente(c);
+
+                int prioridadNuevo = obtenerPrioridad(c.getEstado());
+
+                //insercion ordenada
+                //si no hay nada en la lista
+                //se coloca el nodo nuevo como valor inicial
+                
+                if (vacia()) {
+                    inicio = nuevo;
+
+                } else if (prioridadNuevo < obtenerPrioridad(inicio.getCliente().getEstado())) {
+                    nuevo.setSiguiente(inicio);
+                    inicio = nuevo;
+                }
+
                 JOptionPane.showMessageDialog(null, "Reserva registrada para las: " + horaCompleta);
                 System.out.println(c.getHoraIngreso());
+
             }
+
         }
     }
 

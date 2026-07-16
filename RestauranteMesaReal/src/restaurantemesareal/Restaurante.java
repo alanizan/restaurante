@@ -4,6 +4,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Restaurante {
+    
+    ListaClientesSimple lc = new ListaClientesSimple();
 
     public void menu() {
         
@@ -38,7 +40,7 @@ public class Restaurante {
                     break;
                 case "Registrar Cliente":
                     // Lógica para registrar cliente
-                    ListaClientesSimple.insertar();
+                    ListaClientesSimple
                     
                     break;
                 case "Asignar mesa":
