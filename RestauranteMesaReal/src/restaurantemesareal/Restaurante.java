@@ -40,7 +40,7 @@ public class Restaurante {
                     break;
                 case "Registrar Cliente":
                     // Lógica para registrar cliente
-                    ListaClientesSimple
+                    //ListaClientesSimple
                     
                     break;
                 case "Asignar mesa":
